@@ -3,7 +3,7 @@ import Cart from './components/Cart';
 import ProduceList from './components/ProduceList';
 import { useDispatch } from 'react-redux';
 import { populateProduce } from './store/produce';
-
+import { populateCart } from './store/cart';
 
 
 
@@ -14,6 +14,7 @@ function App() {
 
   useEffect(() => {
     dispatch(populateProduce())
+   
   }, [])
 
   
