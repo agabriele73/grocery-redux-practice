@@ -13,7 +13,6 @@ const store = configureStore()
 if(process.env.NODE_ENV !== "production") {
     window.store = store;
     window.populateProduce = populateProduce;
-    window.populateCart = populateCart;
 }
 function Root() {
   return (
